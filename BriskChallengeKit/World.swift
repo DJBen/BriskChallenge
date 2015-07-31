@@ -17,7 +17,7 @@ public class World: NSObject {
         case ErrorParsingReponse
     }
     
-    static let sharedWorld = World()
+    public static let sharedWorld = World()
     
     let token = "37a69fbd7b3bcee108df0af9f0481e0eaeb4bb75"
     let host = "http://www.briskchallenge.com"
@@ -27,9 +27,9 @@ public class World: NSObject {
     public internal(set) var continents: [Continent]?
     public internal(set) var territories: [Territory]?
     
-    func joinGame(completion: (gameID: String?, error: NSError?) -> Void) {
+    public func joinGame(completion: (gameID: String?, error: NSError?) -> Void) {
         let path = "/v1/brisk/game"
-        request(.POST, host + path, parameters: ["join": true, "team_name": "iOS_rocks", "token": token], encoding: ParameterEncoding.JSON).responseJSON { (request, response, JSON, error) -> Void in
+        request(.POST, host + path, parameters: ["join": true, "team_name": "iOS_rocks"], encoding: ParameterEncoding.JSON).responseJSON { (request, response, JSON, error) -> Void in
             if error != nil {
                 println(error)
                 completion(gameID: nil, error: error)
@@ -48,7 +48,7 @@ public class World: NSObject {
         }
     }
     
-    func joinGame() -> String? {
+    public func joinGame() -> String? {
         let semaphore = dispatch_semaphore_create(0)
         var theGameID: String?
         joinGame { (gameID, error) -> Void in
@@ -59,7 +59,32 @@ public class World: NSObject {
         return theGameID
     }
     
-    func fetchMap(completion: () -> Void) {
+    public func parseMapJSON(JSON: [String: AnyObject]) -> (territories: [Territory], continents: [Continent]) {
+        if let rawTerritories = JSON["territories"] as? [[String: AnyObject]],
+            rawContinents = JSON["continents"] as? [[String: AnyObject]] {
+                let territories = rawTerritories.flatMap { rawTerritory -> [Territory] in
+                    if let territory = Territory(dictionary: rawTerritory) {
+                        return [territory]
+                    } else {
+                        println("Error: territory cannot be parsed: \(rawTerritory)")
+                        return []
+                    }
+                }
+                let continents = rawContinents.flatMap { rawContinent -> [Continent] in
+                    if let continent = Continent(dictionary: rawContinent) {
+                        return [continent]
+                    } else {
+                        println("Error: continent cannot be parsed: \(rawContinent)")
+                        return []
+                    }
+                }
+                return (territories, continents)
+        } else {
+            return ([], [])
+        }
+    }
+    
+    public func fetchMap(completion: (error: NSError?) -> Void) {
         if game == nil {
             println("Game is nil!")
             return
@@ -68,23 +93,18 @@ public class World: NSObject {
         request(.GET, host + path, parameters: ["map": true], encoding: .JSON).responseJSON { (request, response, JSON, error) -> Void in
             if error != nil {
                 println(error)
-                // completion
+                completion(error: error)
                 return
             }
-            if let rawTerritories = JSON?["territories"] as? [[String: AnyObject]],
-            rawContinents = JSON?["continents"] as? [[String: AnyObject]] {
-                self.territories = rawTerritories.flatMap { rawTerritory -> [Territory] in
-                    
-                }
-                self.continents = rawContinents.flatMap { rawContinent -> [Continent] in
-                    if let continent = Continent(dictionary: rawContinent) {
-                        return [continent]
-                    } else {
-                        println("Error: continent cannot be parsed: \(rawContinent)")
-                        return []
-                    }
-                }
+            if  JSON!["error_msg"] != nil {
+                let userInfo = ["error_payload": JSON!]
+                let error = NSError(domain: WorldErrorDomain, code: ErrorCode.ErrorParsingReponse.rawValue, userInfo: userInfo)
+                completion(error: error)
+                return
             }
+            let data = self.parseMapJSON(JSON! as! [String: AnyObject])
+            self.continents = data.continents
+            self.territories = data.territories
         }
     }
 }

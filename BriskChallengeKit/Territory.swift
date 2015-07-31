@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Territory: NSObject {
+public class Territory: NSObject, Equatable, Printable {
     public let identifier: Int
     public let name: String
     let adjacentTerritoryIdentifiers: [Int]
@@ -23,6 +23,12 @@ public class Territory: NSObject {
                 println("Warning: territories not initialized")
                 return []
             }
+        }
+    }
+    
+    override public var description: String {
+        get {
+            return "\"id\":\(identifier), \"name\"=\(name), \"adjacent\":\(adjacentTerritoryIdentifiers)"
         }
     }
     
@@ -42,5 +48,8 @@ public class Territory: NSObject {
             return nil
         }
     }
-    
+}
+
+public func ==(lhs: Territory, rhs: Territory) -> Bool {
+    return lhs.identifier == rhs.identifier
 }

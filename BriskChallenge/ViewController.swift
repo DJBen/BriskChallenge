@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import BriskChallengeKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let gameID = World.sharedWorld.joinGame()
+        World.sharedWorld.fetchMap { (error) -> Void in
+            println(World.sharedWorld.territories)
+            println(World.sharedWorld.continents)
+
+        }
     }
 
     override func didReceiveMemoryWarning() {

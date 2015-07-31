@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Continent: NSObject {
+public class Continent: NSObject, Equatable, Printable {
     public let identifier: Int
     public let name: String
     public let bonus: Double
@@ -27,6 +27,11 @@ public class Continent: NSObject {
         }
     }
     
+    override public var description: String {
+        get {
+            return "{\"id\":\(identifier), \"name\":\(name), \"bonus\":\(bonus), \"territories\":\(territoryIdentifiers)}"
+        }
+    }
     
     public init?(dictionary: [String: AnyObject]) {
         if let identifier = dictionary["continent"] as? Int,
@@ -47,4 +52,12 @@ public class Continent: NSObject {
             return nil
         }
     }
+    
+    public func containsTerritory(territory: Territory) -> Bool {
+        return find(territories, territory) != nil
+    }
+}
+
+public func ==(lhs: Continent, rhs: Continent) -> Bool {
+    return lhs.identifier == rhs.identifier
 }

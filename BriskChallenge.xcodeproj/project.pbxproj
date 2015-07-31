@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3028FE421B6B065200C0D0B7 /* BriskChallengeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3028FE411B6B065200C0D0B7 /* BriskChallengeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3028FE481B6B065200C0D0B7 /* BriskChallengeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3028FE3D1B6B065200C0D0B7 /* BriskChallengeKit.framework */; };
-		3028FE4F1B6B065200C0D0B7 /* BriskChallengeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028FE4E1B6B065200C0D0B7 /* BriskChallengeKitTests.swift */; };
 		3028FE571B6B065D00C0D0B7 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028FE561B6B065D00C0D0B7 /* World.swift */; };
 		3028FE611B6B068100C0D0B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028FE601B6B068100C0D0B7 /* AppDelegate.swift */; };
 		3028FE631B6B068100C0D0B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028FE621B6B068100C0D0B7 /* ViewController.swift */; };
@@ -19,10 +17,14 @@
 		3028FE7F1B6B0BAB00C0D0B7 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028FE7E1B6B0BAB00C0D0B7 /* Continent.swift */; };
 		3028FE811B6B0BB300C0D0B7 /* Territory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028FE801B6B0BB200C0D0B7 /* Territory.swift */; };
 		89EB49F2629DCAF436895F00 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6831DD2A69D4F49C4277B777 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9053AB30E71354F5F7C0F6A4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6831DD2A69D4F49C4277B777 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A9AECB37FF2D5AB06F2E09FC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6831DD2A69D4F49C4277B777 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F49B71861B6B4001005F178D /* BriskChallengeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B71851B6B4001005F178D /* BriskChallengeKitTests.swift */; };
+		F49B71871B6B4001005F178D /* BriskChallengeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3028FE3D1B6B065200C0D0B7 /* BriskChallengeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3028FE491B6B065200C0D0B7 /* PBXContainerItemProxy */ = {
+		F49B71881B6B4001005F178D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3028FE091B6AFE0D00C0D0B7 /* Project object */;
 			proxyType = 1;
@@ -35,9 +37,6 @@
 		3028FE3D1B6B065200C0D0B7 /* BriskChallengeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BriskChallengeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3028FE401B6B065200C0D0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3028FE411B6B065200C0D0B7 /* BriskChallengeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BriskChallengeKit.h; sourceTree = "<group>"; };
-		3028FE471B6B065200C0D0B7 /* BriskChallengeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BriskChallengeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3028FE4D1B6B065200C0D0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3028FE4E1B6B065200C0D0B7 /* BriskChallengeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriskChallengeKitTests.swift; sourceTree = "<group>"; };
 		3028FE561B6B065D00C0D0B7 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		3028FE5C1B6B068100C0D0B7 /* BriskChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BriskChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3028FE5F1B6B068100C0D0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		6831DD2A69D4F49C4277B777 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB37F682D08995DF8D51FBC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		87093D4F5D6E4BDE8E1CBBC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F49B71811B6B4001005F178D /* BriskChallengeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BriskChallengeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49B71841B6B4001005F178D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49B71851B6B4001005F178D /* BriskChallengeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriskChallengeKitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +64,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3028FE441B6B065200C0D0B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3028FE481B6B065200C0D0B7 /* BriskChallengeKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3028FE591B6B068100C0D0B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AECB37FF2D5AB06F2E09FC /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49B717E1B6B4001005F178D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49B71871B6B4001005F178D /* BriskChallengeKit.framework in Frameworks */,
+				9053AB30E71354F5F7C0F6A4 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				3028FE3E1B6B065200C0D0B7 /* BriskChallengeKit */,
-				3028FE4B1B6B065200C0D0B7 /* BriskChallengeKitTests */,
 				3028FE5D1B6B068100C0D0B7 /* BriskChallenge */,
+				F49B71821B6B4001005F178D /* BriskChallengeKitTests */,
 				3028FE121B6AFE0D00C0D0B7 /* Products */,
 				8EB429AEAE9B389F04CF29CD /* Pods */,
 				CECD56A8964082C2E45CF845 /* Frameworks */,
@@ -96,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				3028FE3D1B6B065200C0D0B7 /* BriskChallengeKit.framework */,
-				3028FE471B6B065200C0D0B7 /* BriskChallengeKitTests.xctest */,
 				3028FE5C1B6B068100C0D0B7 /* BriskChallenge.app */,
+				F49B71811B6B4001005F178D /* BriskChallengeKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,23 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				3028FE401B6B065200C0D0B7 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3028FE4B1B6B065200C0D0B7 /* BriskChallengeKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				3028FE4E1B6B065200C0D0B7 /* BriskChallengeKitTests.swift */,
-				3028FE4C1B6B065200C0D0B7 /* Supporting Files */,
-			);
-			path = BriskChallengeKitTests;
-			sourceTree = "<group>";
-		};
-		3028FE4C1B6B065200C0D0B7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3028FE4D1B6B065200C0D0B7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,6 +164,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F49B71821B6B4001005F178D /* BriskChallengeKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F49B71851B6B4001005F178D /* BriskChallengeKitTests.swift */,
+				F49B71831B6B4001005F178D /* Supporting Files */,
+			);
+			path = BriskChallengeKitTests;
+			sourceTree = "<group>";
+		};
+		F49B71831B6B4001005F178D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49B71841B6B4001005F178D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -211,31 +215,16 @@
 			productReference = 3028FE3D1B6B065200C0D0B7 /* BriskChallengeKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3028FE461B6B065200C0D0B7 /* BriskChallengeKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3028FE531B6B065200C0D0B7 /* Build configuration list for PBXNativeTarget "BriskChallengeKitTests" */;
-			buildPhases = (
-				3028FE431B6B065200C0D0B7 /* Sources */,
-				3028FE441B6B065200C0D0B7 /* Frameworks */,
-				3028FE451B6B065200C0D0B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3028FE4A1B6B065200C0D0B7 /* PBXTargetDependency */,
-			);
-			name = BriskChallengeKitTests;
-			productName = BriskChallengeKitTests;
-			productReference = 3028FE471B6B065200C0D0B7 /* BriskChallengeKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		3028FE5B1B6B068100C0D0B7 /* BriskChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3028FE781B6B068100C0D0B7 /* Build configuration list for PBXNativeTarget "BriskChallenge" */;
 			buildPhases = (
+				1BA019F6ACF57468ECB84699 /* Check Pods Manifest.lock */,
 				3028FE581B6B068100C0D0B7 /* Sources */,
 				3028FE591B6B068100C0D0B7 /* Frameworks */,
 				3028FE5A1B6B068100C0D0B7 /* Resources */,
+				F5AC16E6F6321A8910F619F9 /* Embed Pods Frameworks */,
+				6663285D72C4A9A8DCB74F63 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +234,27 @@
 			productName = BriskChallenge;
 			productReference = 3028FE5C1B6B068100C0D0B7 /* BriskChallenge.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F49B71801B6B4001005F178D /* BriskChallengeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49B718A1B6B4001005F178D /* Build configuration list for PBXNativeTarget "BriskChallengeKitTests" */;
+			buildPhases = (
+				6D5CD9AD57F43CF74232629A /* Check Pods Manifest.lock */,
+				F49B717D1B6B4001005F178D /* Sources */,
+				F49B717E1B6B4001005F178D /* Frameworks */,
+				F49B717F1B6B4001005F178D /* Resources */,
+				65BE96012813E90977B00AC7 /* Embed Pods Frameworks */,
+				D5638A3BD18E174A4329ED3F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49B71891B6B4001005F178D /* PBXTargetDependency */,
+			);
+			name = BriskChallengeKitTests;
+			productName = BriskChallengeKitTests;
+			productReference = F49B71811B6B4001005F178D /* BriskChallengeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -258,10 +268,10 @@
 					3028FE3C1B6B065200C0D0B7 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					3028FE461B6B065200C0D0B7 = {
+					3028FE5B1B6B068100C0D0B7 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					3028FE5B1B6B068100C0D0B7 = {
+					F49B71801B6B4001005F178D = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -280,21 +290,14 @@
 			projectRoot = "";
 			targets = (
 				3028FE3C1B6B065200C0D0B7 /* BriskChallengeKit */,
-				3028FE461B6B065200C0D0B7 /* BriskChallengeKitTests */,
 				3028FE5B1B6B068100C0D0B7 /* BriskChallenge */,
+				F49B71801B6B4001005F178D /* BriskChallengeKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3028FE3B1B6B065200C0D0B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3028FE451B6B065200C0D0B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,10 +314,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F49B717F1B6B4001005F178D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1BA019F6ACF57468ECB84699 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		21F08B4130F3FB61E83B7354 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65BE96012813E90977B00AC7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6663285D72C4A9A8DCB74F63 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,6 +399,51 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		6D5CD9AD57F43CF74232629A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5638A3BD18E174A4329ED3F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5AC16E6F6321A8910F619F9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -357,14 +457,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3028FE431B6B065200C0D0B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3028FE4F1B6B065200C0D0B7 /* BriskChallengeKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3028FE581B6B068100C0D0B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,13 +466,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F49B717D1B6B4001005F178D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49B71861B6B4001005F178D /* BriskChallengeKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3028FE4A1B6B065200C0D0B7 /* PBXTargetDependency */ = {
+		F49B71891B6B4001005F178D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3028FE3C1B6B065200C0D0B7 /* BriskChallengeKit */;
-			targetProxy = 3028FE491B6B065200C0D0B7 /* PBXContainerItemProxy */;
+			targetProxy = F49B71881B6B4001005F178D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -532,38 +632,9 @@
 			};
 			name = Release;
 		};
-		3028FE541B6B065200C0D0B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BriskChallengeKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		3028FE551B6B065200C0D0B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BriskChallengeKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		3028FE791B6B068100C0D0B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87093D4F5D6E4BDE8E1CBBC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -578,10 +649,43 @@
 		};
 		3028FE7A1B6B068100C0D0B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB37F682D08995DF8D51FBC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BriskChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F49B718B1B6B4001005F178D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87093D4F5D6E4BDE8E1CBBC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BriskChallengeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F49B718C1B6B4001005F178D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB37F682D08995DF8D51FBC /* Pods.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BriskChallengeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -607,20 +711,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3028FE531B6B065200C0D0B7 /* Build configuration list for PBXNativeTarget "BriskChallengeKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3028FE541B6B065200C0D0B7 /* Debug */,
-				3028FE551B6B065200C0D0B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3028FE781B6B068100C0D0B7 /* Build configuration list for PBXNativeTarget "BriskChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3028FE791B6B068100C0D0B7 /* Debug */,
 				3028FE7A1B6B068100C0D0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49B718A1B6B4001005F178D /* Build configuration list for PBXNativeTarget "BriskChallengeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49B718B1B6B4001005F178D /* Debug */,
+				F49B718C1B6B4001005F178D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
